@@ -13,3 +13,11 @@ export M2_HOME=/usr/local/apache-maven/apache-maven-3.3.3
 export M2=$M2_HOME/bin
 export MAVEN_OPTS="-Xms256m -Xmx512m"
 export PATH=$M2:$PATH
+
+
+## define a link
+sudo ln -s /usr/local/apache-maven/apache-maven-3.3.3 /usr/bin/mvn
+
+## define PATH .bashrc
+
+export PATH=/usr/bin/mvn:$PATH
